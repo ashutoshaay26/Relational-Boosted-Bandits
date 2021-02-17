@@ -1,0 +1,15 @@
+//Parameters
+setParam: maxTreeDepth=3.
+setParam: nodeSize=2.
+setParam: numOfClauses=8.
+//Modes
+mode: age(+uid,#varagenum).
+mode: bu2base(+mid,+uid).
+mode: genderm(+uid).
+mode: genderf(+uid).
+mode: genre(+mid,+mtype).
+mode: rating(+mid,+uid,#varvote).
+mode: rating(-mid,+uid,#varvote).
+mode: like(+uid,+mtype).
+bridger: bu2base/2. 
+

@@ -1,0 +1,187 @@
+% Running on host: AKDell
+
+% Switching to VarIndicator = uppercase.
+
+% Unset'ing VarIndicator.
+
+% Calling ILPouterLoop from createRegressionOuterLooper.
+
+% getInputArgWithDefaultValue: args=[test/test_pos.txt, test/test_neg.txt, test/test_bk.txt, test/test_facts.txt]
+%  for N=0: args[N]=test/test_pos.txt
+
+% getInputArgWithDefaultValue: args=[test/test_pos.txt, test/test_neg.txt, test/test_bk.txt, test/test_facts.txt]
+%  for N=1: args[N]=test/test_neg.txt
+
+% getInputArgWithDefaultValue: args=[test/test_pos.txt, test/test_neg.txt, test/test_bk.txt, test/test_facts.txt]
+%  for N=2: args[N]=test/test_bk.txt
+
+% getInputArgWithDefaultValue: args=[test/test_pos.txt, test/test_neg.txt, test/test_bk.txt, test/test_facts.txt]
+%  for N=3: args[N]=test/test_facts.txt
+
+% Welcome to the WILL ILP/SRL systems.
+
+
+% Switching to VarIndicator = uppercase.
+
+% Unset'ing VarIndicator.
+% Reading background theory from dir: null
+% Load '../background.txt'.
+
+% Switching to VarIndicator = uppercase.
+
+***** Warning: % Since this is the first setting of the notation for variables, will keep:
+%   variableIndicator = uppercase *****
+
+
+***** Warning: % Since this is the first setting of the notation for variables, will keep:
+%   variableIndicator = uppercase *****
+
+% [ LazyGroundClauseIndex ]  Building full index for mode/1 with 1 assertions.
+% LoadAllModes() called.  Currently loaded modes: []
+% [ LazyGroundClauseIndex ]  Building full index for sameAs/2 with 2 assertions.
+% [ LazyGroundNthArgumentClauseIndex ]  Argument 1:  Building full index for exp/3.
+% [ LazyGroundNthArgumentClauseIndex ]  Argument 0:  Building full index for log/3.
+% LoadAllLibraries() called.  Currently loaded libraries: [listsInLogic, differentInLogic, modes_arithmeticInLogic, inlines_comparisonInLogic, modes_listsInLogic, inlines_differentInLogic, modes_differentInLogic, arithmeticInLogic, inlines_listsInLogic, modes_comparisonInLogic, comparisonInLogic, inlines_arithmeticInLogic]
+
+%  Read the facts.
+%  Have read 166,486 facts.
+% Have read 6 examples from 'test' [test/test*].
+% Have read 0 examples from 'test' [test/test*].
+
+%  LearnOneClause initialized.
+
+% The outer looper has been created.
+
+% Initializing the ILP inner looper.
+
+% NEW target:                 like(D, E)
+%  targetPred:                like/2
+%  targetArgTypes:            signature = [const, const], types = [+uid, +mtype]
+%  targets:                   [like(D, E)]
+%  targetPredicates:          [like/2]
+%  targetArgSpecs:            [[D[+uid], E[+mtype]]]
+%  variablesInTargets:        [[D, E]]
+
+% Started collecting constants
+
+% Collecting the types of constants.
+
+%   *** WARNING ***  Constant '1' is already marked as being of types = [varagenum];
+%          type = 'varvote' may be added if not already known.
+%  PredicateName = 'rating', from 'rating(item_id_63, user_id_5, 1)',
+%  which has types = [signature = [const, const, const], types = [+mid, +uid, #varvote], signature = [const, const, const], types = [-mid, +uid, #varvote]]
+%   Other warnings with this predicate and this new type are not reported in order to keep this printout small.  Use dontComplainAboutMultipleTypes to override.
+
+% Looking at the training examples to see if any types of new constants can be inferred.
+% Time to collect constants: 781 milliseconds
+% Time to collect examples: 0 seconds
+
+% Read 6 pos examples and 0 neg examples.
+% Time to init learnOneClause: 828 milliseconds
+% Old dirtrain/models/
+
+% Have 6 'raw' positive examples and kept 6.
+% Have 0 'raw' negative examples and kept 0.
+% No neg ex for like
+
+% processing backup's for like
+%  POS EX = 6
+%  NEG EX = 0
+
+% Memory usage by WILLSetup (just counts # targets?):
+%  |backupPosExamples| = 1
+%  |backupNegExamples| = 1
+%  |predicatesAsFacts| = 0
+%  |addedToFactBase|   = 0
+
+% Getting bRDN's target predicates.
+% Did not learn a model for 'like' this run.
+%   loadModel (#0): train/models/bRDNs/Trees/likeTree0.tree
+%   loadModel (#1): train/models/bRDNs/Trees/likeTree1.tree
+%   loadModel (#2): train/models/bRDNs/Trees/likeTree2.tree
+%   loadModel (#3): train/models/bRDNs/Trees/likeTree3.tree
+%   loadModel (#4): train/models/bRDNs/Trees/likeTree4.tree
+%   loadModel (#5): train/models/bRDNs/Trees/likeTree5.tree
+%   loadModel (#6): train/models/bRDNs/Trees/likeTree6.tree
+%   loadModel (#7): train/models/bRDNs/Trees/likeTree7.tree
+%   loadModel (#8): train/models/bRDNs/Trees/likeTree8.tree
+%   loadModel (#9): train/models/bRDNs/Trees/likeTree9.tree
+%   loadModel (#10): train/models/bRDNs/Trees/likeTree10.tree
+%   loadModel (#11): train/models/bRDNs/Trees/likeTree11.tree
+%   loadModel (#12): train/models/bRDNs/Trees/likeTree12.tree
+%   loadModel (#13): train/models/bRDNs/Trees/likeTree13.tree
+%   loadModel (#14): train/models/bRDNs/Trees/likeTree14.tree
+%   loadModel (#15): train/models/bRDNs/Trees/likeTree15.tree
+%   loadModel (#16): train/models/bRDNs/Trees/likeTree16.tree
+%   loadModel (#17): train/models/bRDNs/Trees/likeTree17.tree
+%   loadModel (#18): train/models/bRDNs/Trees/likeTree18.tree
+%   loadModel (#19): train/models/bRDNs/Trees/likeTree19.tree
+%   loadModel (#20): train/models/bRDNs/Trees/likeTree20.tree
+%   loadModel (#21): train/models/bRDNs/Trees/likeTree21.tree
+%   loadModel (#22): train/models/bRDNs/Trees/likeTree22.tree
+%   loadModel (#23): train/models/bRDNs/Trees/likeTree23.tree
+%   loadModel (#24): train/models/bRDNs/Trees/likeTree24.tree
+%   loadModel (#25): train/models/bRDNs/Trees/likeTree25.tree
+%   loadModel (#26): train/models/bRDNs/Trees/likeTree26.tree
+%   loadModel (#27): train/models/bRDNs/Trees/likeTree27.tree
+%   loadModel (#28): train/models/bRDNs/Trees/likeTree28.tree
+%   loadModel (#29): train/models/bRDNs/Trees/likeTree29.tree
+%   loadModel (#30): train/models/bRDNs/Trees/likeTree30.tree
+%   loadModel (#31): train/models/bRDNs/Trees/likeTree31.tree
+%   loadModel (#32): train/models/bRDNs/Trees/likeTree32.tree
+%   loadModel (#33): train/models/bRDNs/Trees/likeTree33.tree
+%   loadModel (#34): train/models/bRDNs/Trees/likeTree34.tree
+%   loadModel (#35): train/models/bRDNs/Trees/likeTree35.tree
+%   loadModel (#36): train/models/bRDNs/Trees/likeTree36.tree
+%   loadModel (#37): train/models/bRDNs/Trees/likeTree37.tree
+%   loadModel (#38): train/models/bRDNs/Trees/likeTree38.tree
+%   loadModel (#39): train/models/bRDNs/Trees/likeTree39.tree
+%   loadModel (#40): train/models/bRDNs/Trees/likeTree40.tree
+%   loadModel (#41): train/models/bRDNs/Trees/likeTree41.tree
+%   loadModel (#42): train/models/bRDNs/Trees/likeTree42.tree
+%   loadModel (#43): train/models/bRDNs/Trees/likeTree43.tree
+%  Done loading 44 models.
+File: test/advice.txt doesnt exist.Hence no advice loaded
+
+% for like |lookupPos| = 6
+% for like |lookupNeg| = 0
+% getJointExamples: |pos| = 6, |neg| = 0
+
+% Starting inference in bRDN.
+% Trees = 44
+
+% Starting getMarginalProbabilities.
+% [ LazyGroundNthArgumentClauseIndex ]  Argument 1:  Building full index for rating/3.
+% [ LazyGroundClauseIndex ]  Building full index for genre/2 with 5,046 assertions.
+% [ LazyGroundClauseIndex ]  Building full index for age/2 with 941 assertions.
+% [ LazyGroundClauseIndex ]  Building full index for genderm/1 with 669 assertions.
+% [ LazyGroundClauseIndex ]  Building full index for genderf/1 with 272 assertions.
+% No Gibbs sampling needed during inference.
+ (Arithmetic) Mean Probability Assigned to Correct Output Class: 5.201/6.00 = 0.866860
+
+ The weighted count of positive examples = 6.000 and the weighted count of negative examples = 0.000
+
+printExamples: Writing out predictions (for Tuffy?) on 6 examples for 'like' to:
+  test/results_like.db
+ and to:
+  test/query_like.db
+%    No need to compress since small: test/query_like.db
+
+% Computing Area Under Curves.
+%Pos=6
+%Neg=0
+%LL:-0.8826827260986323
+%LL:-0.8826827260986323
+
+No negative examples in ComputeAUC.  Using AUC-ROC = 1.0 and AUC-PR = 1.0
+% F1 = 0.9090909090909091
+% Threshold = 0.8756358858338149
+
+%   AUC ROC   = 1.000000
+%   AUC PR    = 1.000000
+%   CLL	      = -0.147114
+%   Precision = 1.000000 at threshold = 0.500
+%   Recall    = 1.000000
+%   F1        = 1.000000
+
+% Total inference time (44 trees): 5.892 seconds.
