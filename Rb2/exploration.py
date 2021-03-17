@@ -284,8 +284,8 @@ def gen_explore_train(bulk_data,batchsize,cnt_sample):
 	#write_pickle('cnt_ex.pkl',cnt_ex)		
 
 	# INformed Sampling.............
-	success_query =  select_pos_sample(success_query)
-	failed_query =  select_neg_sample(failed_query)
+	success_query =  select_pos_sample(success_query,batchsize)
+	failed_query =  select_neg_sample(failed_query,batchsize)
 
 	##### Informed Sampling Block Ends here....
 	
