@@ -170,7 +170,7 @@ def select_neg_sample(neg,batchsize):
 		probs = [math.exp(v) / z for v in pro]
 		index = sample_draw(probs)
 		final.append(samples.pop(index))
-		probs.pop(index)
+		pro.pop(index)
 
 	return final
 
@@ -275,7 +275,7 @@ def gen_explore_train(bulk_data,batchsize,cnt_sample):
 			print(s_d)
 			#print("YEYYY", label, s_l)
 			reward=np.append(reward,1)
-			success_query.append(suggest)
+			success_query.append((prob,suggest))
 			#update(d_label[s_l],1)
 		else:
 			reward=np.append(reward,0)
