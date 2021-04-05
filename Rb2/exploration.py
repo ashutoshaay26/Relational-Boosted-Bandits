@@ -297,7 +297,7 @@ def gen_explore_train(bulk_data,batchsize,cnt_sample):
 
 	with open(train_dst+'train_neg.txt', ch) as a_writer:
 		for i in failed_query:
-			a_writer.write(i[1]+'.'+'\n')
+			a_writer.write(i+'.'+'\n')
 
 	np.save("reward.npy",reward)	
 	return cnt_sample	
